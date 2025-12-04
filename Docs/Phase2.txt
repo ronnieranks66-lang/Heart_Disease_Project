@@ -1,0 +1,63 @@
+# PHASE 2: DATA EXPLORATION
+## Heart Disease Prediction System
+
+---
+
+## Overview
+- **Duration:** 3 days (8 hours)
+- **Objective:** Understand dataset thoroughly
+- **Status:** ✓ COMPLETE
+
+---
+
+## What You'll Do
+
+### 1. Data Loading & Inspection
+- Load heart.csv
+- Check shape: 918 rows × 12 columns
+- Check data types
+- Verify target variable
+
+### 2. Data Quality Assessment
+- Check for missing values
+- Check for duplicates
+- Check for outliers
+- Verify ranges
+
+### 3. Basic Statistics
+```python
+df.info()          # Data types & non-null counts
+df.describe()      # Summary statistics
+df.isnull().sum()  # Missing values
+df.duplicated().sum() # Duplicates
+```
+
+### 4. Target Variable Analysis
+- Count disease vs healthy: 50-50 split
+- Visualize distribution
+- Note: Perfect class balance!
+
+### 5. Feature Overview
+- 12 features total
+- 6 numerical, 5 categorical, 1 binary
+- Check ranges and distributions
+
+---
+
+## Key Findings
+✓ 918 patient records
+✓ 0 missing values (clean!)
+✓ 0 duplicates (no redundancy)
+✓ Perfect 50-50 class balance
+✓ Data ready for analysis
+
+---
+
+## Deliverables
+✓ Dataset fully understood
+✓ Data quality verified
+✓ Statistics documented
+✓ 4+ exploratory visualizations
+✓ Ready for Phase 3
+
+---

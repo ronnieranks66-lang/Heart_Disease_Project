@@ -1,0 +1,18 @@
+{
+  "numerical_features": [
+    "Age",
+    "RestingBP",
+    "Cholesterol",
+    "MaxHR",
+    "Oldpeak",
+    "HR_Age_Ratio"
+  ],
+  "categorical_features": [
+    "Sex",
+    "ExerciseAngina",
+    "ChestPainType",
+    "RestingECG",
+    "ST_Slope"
+  ],
+  "feature_order": []
+}

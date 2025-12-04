@@ -1,0 +1,67 @@
+# PHASE 3: EXPLORATORY DATA ANALYSIS (EDA)
+## Heart Disease Prediction System
+
+---
+
+## Overview
+- **Duration:** 3 days (8 hours)
+- **Objective:** Discover patterns and relationships
+- **Status:** ✓ COMPLETE
+
+---
+
+## What You'll Do
+
+### 1. Correlation Analysis
+```python
+import seaborn as sns
+correlation_matrix = df.corr()
+sns.heatmap(correlation_matrix)
+```
+
+### 2. Feature-Target Relationships
+- Calculate correlation with target
+- Top 5 most correlated features:
+  1. ST_Slope: 0.38
+  2. ExerciseAngina: 0.32
+  3. Oldpeak: 0.30
+  4. Age: 0.25
+  5. MaxHR: -0.24
+
+### 3. Numerical Features Analysis
+- Distribution plots for each feature
+- Box plots for outlier detection
+- Compare disease vs healthy
+
+### 4. Categorical Features Analysis
+- Value counts for each category
+- Chi-square tests with target
+- Visualize proportions
+
+### 5. Statistical Testing
+- Correlation significance
+- T-tests for groups
+- Chi-square for categories
+
+---
+
+## Key Findings
+✓ ST_Slope strongest predictor (0.38)
+✓ ExerciseAngina highly associated
+✓ Age shows linear relationship
+✓ MaxHR negative correlation
+✓ ~50 medically valid outliers
+✓ Features show clear patterns
+
+---
+
+## Deliverables
+✓ Correlation heatmap
+✓ Feature-target analysis
+✓ Distribution visualizations
+✓ Outlier detection plot
+✓ Statistical test results
+✓ Pattern insights documented
+✓ Ready for Phase 4
+
+---

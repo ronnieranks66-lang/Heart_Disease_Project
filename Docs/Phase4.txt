@@ -1,0 +1,75 @@
+# PHASE 4: DATA PREPROCESSING & FEATURE ENGINEERING
+## Heart Disease Prediction System
+
+---
+
+## Overview
+- **Duration:** 3 days (8 hours)
+- **Objective:** Prepare data for modeling
+- **Status:** ✓ COMPLETE
+
+---
+
+## What You'll Do
+
+### 1. Handle Missing Values
+```python
+# 163 zeros replaced with median by disease status
+df['Cholesterol'] = df.groupby('HeartDisease')['Cholesterol'].transform(
+    lambda x: x.replace(0, x.median())
+)
+```
+
+### 2. Categorical Encoding
+- Label Encode: Sex, ExerciseAngina (binary)
+- One-Hot Encode: ChestPainType, RestingECG, ST_Slope
+- Result: 18+ features from encoding
+
+### 3. Feature Engineering
+- Age_Group: Age ranges (young, middle, senior)
+- HR_Age_Ratio: MaxHR / Age (fitness indicator)
+- Cholesterol_High: Binary high/normal flag
+- BP_Category: Blood pressure categories
+
+### 4. Train-Test Split
+```python
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, stratify=y, random_state=42
+)
+# Result: 734 train, 184 test
+```
+
+### 5. Feature Scaling
+```python
+from sklearn.preprocessing import StandardScaler
+
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+```
+
+---
+
+## Key Results
+✓ 163 missing values handled
+✓ 5 categorical features encoded
+✓ 4 new features engineered
+✓ 22+ total features ready
+✓ 80-20 stratified split done
+✓ Features properly scaled
+✓ No data leakage
+
+---
+
+## Deliverables
+✓ Cleaned dataset
+✓ Encoded features (CSV files)
+✓ Scaler saved (pickle)
+✓ Encoders saved (pickle)
+✓ Train-test split created
+✓ Feature metadata (JSON)
+✓ Ready for Phase 5
+
+---

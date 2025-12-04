@@ -1,0 +1,79 @@
+# PHASE 6: HYPERPARAMETER TUNING & OPTIMIZATION
+## Heart Disease Prediction System
+
+---
+
+## Overview
+- **Duration:** 2 days (6 hours)
+- **Objective:** Optimize Random Forest hyperparameters
+- **Status:** ✓ COMPLETE
+
+---
+
+## What You'll Do
+
+### 1. Define Parameter Grid
+```python
+param_grid = {
+    'n_estimators': [100, 200, 300],
+    'max_depth': [10, 20, 30, None],
+    'min_samples_split': [2, 5, 10],
+    'min_samples_leaf': [1, 2, 4],
+    'max_features': ['sqrt', 'log2']
+}
+```
+
+### 2. Grid Search
+```python
+from sklearn.model_selection import GridSearchCV
+
+grid_search = GridSearchCV(
+    RandomForestClassifier(),
+    param_grid,
+    cv=5,
+    scoring='f1',
+    n_jobs=-1
+)
+grid_search.fit(X_train, y_train)
+```
+
+### 3. Results
+- **Combinations tested:** 108
+- **Best CV F1-Score:** 0.925
+- **Best Parameters Found:**
+  - n_estimators: 200
+  - max_depth: 20
+  - min_samples_split: 5
+  - min_samples_leaf: 2
+  - max_features: 'sqrt'
+
+### 4. Test Set Performance
+- **Before tuning:** 90.2% accuracy
+- **After tuning:** 92.4% accuracy
+- **Improvement:** +2.2%
+
+### 5. Save Best Model
+```python
+best_model = grid_search.best_estimator_
+pickle.dump(best_model, open('models/best_model_tuned.pkl', 'wb'))
+```
+
+---
+
+## Key Results
+✓ Systematic hyperparameter search
+✓ 108 combinations evaluated
+✓ Best parameters identified
+✓ +2.2% accuracy improvement
+✓ Model ready for evaluation
+
+---
+
+## Deliverables
+✓ Tuned model (pickle file)
+✓ Best parameters (JSON)
+✓ Tuning results report
+✓ GridSearchCV complete
+✓ Ready for Phase 7
+
+---

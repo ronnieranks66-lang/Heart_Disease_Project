@@ -1,0 +1,68 @@
+# PHASE 1: PROJECT SETUP
+## Heart Disease Prediction System
+
+---
+
+## Overview
+- **Duration:** 2 days (4 hours)
+- **Objective:** Set up development environment
+- **Status:** ✓ COMPLETE
+
+---
+
+## What You'll Do
+
+### 1. Environment Setup
+- Install Python 3.8+
+- Create virtual environment
+- Install Jupyter Notebook
+- Install scikit-learn, pandas, numpy
+
+### 2. Data Download
+- Download Kaggle Heart Disease Dataset
+- Save to data/ folder
+- Verify 918 records present
+
+### 3. Project Structure
+```
+heart-disease-prediction/
+├── data/
+│   └── heart.csv
+├── notebooks/
+├── models/
+├── reports/
+└── visualizations/
+```
+
+### 4. Initial Exploration
+- Load data into Jupyter
+- Check shape: 918 × 13
+- Verify all columns present
+- Quick data inspection
+
+---
+
+## Key Commands
+
+```bash
+# Create environment
+python -m venv venv
+source venv/bin/activate
+
+# Install basics
+pip install jupyter pandas numpy scikit-learn matplotlib seaborn
+
+# Start Jupyter
+jupyter notebook
+```
+
+---
+
+## Deliverables
+✓ Environment configured
+✓ Data downloaded
+✓ Project structure created
+✓ Initial data loaded
+✓ Ready for Phase 2
+
+---

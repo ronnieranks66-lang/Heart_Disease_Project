@@ -1,0 +1,25 @@
+
+PHASE 3 EDA REPORT
+================================================================================
+
+Top Features by Importance:
+           Feature  MI_Score
+10        ST_Slope  0.204171
+8   ExerciseAngina  0.135266
+2    ChestPainType  0.126065
+9          Oldpeak  0.093727
+7            MaxHR  0.074047
+
+Key Findings:
+1. ST_Slope is the strongest predictor
+2. Multiple features show significant correlation
+3. Outliers are within expected ranges
+4. Data is ready for preprocessing
+
+Recommendations:
+- Use top 5 features as priority
+- Encode categorical variables in Phase 4
+- Handle zeros in RestingBP and Cholesterol
+- Consider feature scaling for distance-based models
+
+Next: Phase 4 - Data Preprocessing

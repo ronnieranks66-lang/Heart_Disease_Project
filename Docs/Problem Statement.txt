@@ -1,0 +1,9 @@
+Problem Statement
+
+Heart failure is a significant cause of morbidity and mortality worldwide. 
+Early prediction and intervention can save lives and reduce healthcare costs. 
+However, healthcare professionals often struggle to accurately identify individuals at high risk of heart failure based on clinical data alone.
+This project aims to build a robust data-driven model using patient health records to predict the likelihood of heart failure. 
+By leveraging open-source medical datasets, 
+the project seeks to empower clinicians and healthcare stakeholders with actionable insights for timely intervention, 
+improved patient outcomes, and more efficient allocation of healthcare resources.

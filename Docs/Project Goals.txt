@@ -1,0 +1,7 @@
+Project Goals
+
+1. Download and prepare the heart failure prediction dataset for analysis.
+2. Set up a reproducible and well-documented data analytics environment using VS Code.
+3. Clearly define success metrics for heart failure prediction and establish a project workflow.
+4. Develop, evaluate, and iterate on data-driven models to determine key risk factors and predict heart failure risk.
+5. Create clear, actionable documentation and visualizations to present findings for non-technical stakeholders.
